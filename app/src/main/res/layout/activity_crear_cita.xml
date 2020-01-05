@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Actividades.Crear_cita"
+    android:padding="20dp"
+    android:layout_gravity="center">
+
+    <TextView
+
+        style="@style/administracionUAdn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nueva cita">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/fecha_citafire"
+        android:hint="fecha de cita"
+        android:clickable="true"
+        android:focusable="false"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+
+        android:ems="10"
+        android:id="@+id/servicio_cita_fire"
+        android:hint="@string/Servicio"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:id="@+id/tiempo_estimado"
+        android:hint="tiempo del servicio"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/guardar_boton_cita"
+
+
+        android:src="@drawable/ic_nuevo">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+</LinearLayout>

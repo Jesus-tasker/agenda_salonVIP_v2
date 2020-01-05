@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/citas_image_perfil"
+        android:src="@mipmap/ic_perfil"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nom_cliente_cita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Nombre" />
+
+        <TextView
+            android:id="@+id/telefono_cliente_cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Telefono" />
+
+        <TextView
+            android:id="@+id/serv_cliente_cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Servicio" />
+        <TextView
+            android:id="@+id/tiempo_cita_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="duracion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cita"
+              ></ImageView>
+
+            <TextView
+                android:id="@+id/fecha_cliente_cita"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+
+
+                android:text="@string/Fecha" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="20dp"></Space>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"></Space>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:src="@drawable/ic_cerrar"
+                android:id="@+id/borrar_cita"
+                ></ImageView>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"></Space>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cumplido"
+                android:id="@+id/cita_cumplida"
+
+                ></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

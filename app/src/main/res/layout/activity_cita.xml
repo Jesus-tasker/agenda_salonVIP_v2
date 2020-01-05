@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".cita">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="informacion clientes" />
+
+    <TextView
+        android:id="@+id/muestraclient"
+        style="@style/boton"
+        android:layout_width="224dp"
+        android:layout_height="55dp"
+        app:autoSizeTextType="uniform"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/muestratel"
+        style=""
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/muestraTrab"
+        android:layout_width="227dp"
+        android:layout_height="54dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/ultimo_trabajo"
+        android:layout_width="397dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Agregar Proxima Cita" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cita"
+            android:layout_width="70dp"
+            android:layout_height="58dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:hint="Proxima cita" />
+
+        <Spinner
+            android:id="@+id/citas_trabajo"
+            android:layout_width="127dp"
+            android:layout_height="38dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/guardar_cita"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/guardar1" />
+    </LinearLayout>
+
+</LinearLayout>

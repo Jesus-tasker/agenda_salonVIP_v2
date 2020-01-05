@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.Registro_USU_fire">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:id="@+id/foto_usu"
+                android:src="@mipmap/ic_launcher">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inserta foto de perfil"
+                android:textColor="@color/colorPrimary">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/nombre_usuario"
+                android:hint="Usuario"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/correo_usuario"
+                android:hint="Correo"/>
+            <EditText
+                android:id="@+id/contraasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+
+                tools:layout_editor_absoluteY="152dp"
+                tools:layout_editor_absoluteX="89dp"
+
+                android:hint="@string/contrasena"
+                style="@style/Widget.AppCompat.EditText"/>
+            <EditText
+                android:id="@+id/contraasena_repite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                tools:layout_editor_absoluteY="242dp"
+                tools:layout_editor_absoluteX="88dp"
+
+                android:hint="nueva contrasena"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/fecha_nacimiento"
+                android:hint="fecha de nacimiento"
+                android:clickable="true"
+                android:focusable="false"
+                />
+            <RadioGroup
+                android:id="@+id/rdGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/hombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="hombre"
+                    android:layout_weight="1"
+                    android:checked="true">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/mujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Mujer"
+                    android:layout_weight="1">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:text="@string/guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guardar_cuenta_nueva"
+                style="@style/boton"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

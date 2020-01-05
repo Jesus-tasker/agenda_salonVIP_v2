@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/clientes_inicio_item"
+        android:title="clientes"
+        android:icon="@drawable/ic_seguimiento"
+
+        ></item>
+    <item
+        android:id="@+id/mensajeria"
+        android:icon="@drawable/ic_citas_item"
+        android:title="mensajeria"
+        ></item>
+    <item
+        android:id="@+id/citas_item"
+        android:icon="@drawable/ic_cita"
+        android:title="citasv"
+        ></item>
+    <item
+        android:id="@+id/portafolio_item"
+        android:icon="@drawable/ic_perfil"
+        android:title="portafolio"
+        ></item>
+</menu>

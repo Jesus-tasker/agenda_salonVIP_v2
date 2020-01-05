@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.Registro_Usuario_simple_firebase2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_usu2"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:src="@mipmap/ic_perfil">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrate"
+                android:textColor="@color/colorPrimary">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/nombre_usuario2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Usuario"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/correo_usuario2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/contraasena2"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:hint="@string/contrasena"
+                android:inputType="textPassword"
+
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="152dp" />
+
+            <EditText
+                android:id="@+id/contraasena_repite2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="repetir  contraseña"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="88dp"
+
+                tools:layout_editor_absoluteY="242dp" />
+
+
+            <Button
+                android:id="@+id/guardar_cuenta_nueva2"
+                style="@style/boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/guardar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

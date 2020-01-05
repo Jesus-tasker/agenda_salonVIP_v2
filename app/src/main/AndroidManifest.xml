@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agenda_salonvip">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Actividades.Registro_Usuario_simple_firebase2"></activity>
+        <activity android:name=".Actividades.Usuario_Informacion" />
+        <activity android:name=".Actividades.Servicios_ofrece" />
+        <activity android:name=".Actividades.Mensajeria1" />
+        <activity android:name=".Actividades.Crear_cita" />
+        <activity android:name=".Actividades.Lista_clientes3" />
+        <activity android:name=".Actividades.Lista_clientes2" />
+        <activity android:name=".Actividades.Lista_clientes" />
+        <activity android:name=".Actividades.Cliente_RTDB" />
+        <activity android:name=".Actividades.Login_USU_fire">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Actividades.Registro_USU_fire" />
+        <activity android:name="button_navegation.Navegador" />
+        <activity android:name=".cita_cliente_exitente" />
+        <activity android:name=".pagina_inicio" />
+        <activity android:name=".Registro_Usuario" />
+        <activity android:name=".proxima_cita" />
+        <activity android:name=".cita" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".interfaz2" />
+    </application>
+
+</manifest>

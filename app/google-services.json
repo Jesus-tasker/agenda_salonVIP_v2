@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "672949381704",
+    "firebase_url": "https://agendasalonvip.firebaseio.com",
+    "project_id": "agendasalonvip",
+    "storage_bucket": "agendasalonvip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672949381704:android:dcd119fe3f309c7fa2467d",
+        "android_client_info": {
+          "package_name": "com.example.agenda_salonvip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672949381704-gnaln128in96hbd9ecm4dfdh6smtohqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agenda_salonvip",
+            "certificate_hash": "2ab626e370e79bcd2746953f575b65a32dbe149b"
+          }
+        },
+        {
+          "client_id": "672949381704-tneashmi33nh5idd7o1nk53f405j6nl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBft4ThP80yZY1-Y8KY_g5PH2tqDo8ls2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672949381704-tneashmi33nh5idd7o1nk53f405j6nl0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

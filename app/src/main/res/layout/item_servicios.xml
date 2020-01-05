@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto_servicio_emisor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_perfil">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/nombre_receptor_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Nombre" />
+
+        <TextView
+            android:id="@+id/ubicacion_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ubicacion" />
+
+        <ImageView
+            android:id="@+id/menu_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            ></ImageView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagen_del_producto"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@mipmap/ic_perfil"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_money"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/precio_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="precio"></TextView>
+
+        <ImageView
+            android:id="@+id/guardar_servicio_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:src="@drawable/ic_megusta"></ImageView>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"></Space>
+
+        <ImageView
+            android:id="@+id/chatear_emisor_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mensaje2"></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
